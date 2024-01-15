@@ -12,7 +12,6 @@
 #define DEF     6
 #define GAME    7
 #define FNNAV   8
-#define CODENAV 9
 
 &caps_word {
   continue-list = <UNDERSCORE MINUS>;
@@ -34,7 +33,7 @@
 		combo_cut {
       timeout-ms = <50>;
       key-positions = <22 23>;
-      bindings = <&kp LG(X)>;
+      bindings = <&kp LA(LG(V))>;
     };
 		combo_paste {
       timeout-ms = <50>;
@@ -50,11 +49,6 @@
       timeout-ms = <50>;
       key-positions = <27 28>;
       bindings = <&tog GAME>;
-    };
-		combo_grave {
-      timeout-ms = <50>;
-      key-positions = <0 1>;
-      bindings = <&kp GRAVE>;
     };
   };
 };
@@ -90,7 +84,7 @@
 			bindings = <
 				&kp Q         &kp W         &lt MEDIA E         &kp R         &kp T        	         &kp Y          &kp U               &kp I         &kp O      &kp P
 				&hm LSHIFT A  &lt SYM S     &hm LC(LS(LALT)) D  &lt NAV F     &hm LC(LG(LALT)) G     &kp H          &hm LC(LS(LALT)) J  &lt NUM K     &lt SYM L  &hm RSHIFT SQT
-				&kp Z   			&kp X   		  &kp C               &kp V         &kp B           		   &kp N          &kp M               &kp COMMA     &kp DOT    &kp QMARK
+				&kp Z   			&kp X   		  &kp C               &lt FNNAV V   &kp B           		   &kp N          &kp M               &kp COMMA     &kp DOT    &kp QMARK
 								                    &hm LCTL ESC        &hm LALT TAB  &hm LGUI SPACE         &hm RGUI BSPC  &hm RALT ENTER      &lt FUNC DEL
 			>;
 		};
@@ -99,10 +93,10 @@
 					label = "Navigation";
 
 					bindings = <
-					 &trans  &kp LG(Q)  &kp LG(W)    &trans  &trans     &kp HOME      &kp LA(LEFT)  &kp UP         &kp LA(RIGHT)  &kp END
-					 &trans  &mo FNNAV  &mo CODENAV  &trans  &trans     &kp LG(LBKT)  &kp LEFT      &kp DOWN       &kp RIGHT      &kp LG(RBKT)
-					 &trans  &trans     &trans       &trans  &trans     &trans        &trans        &trans         &trans         &trans
-											 			  &trans       &trans  &trans     &kp TAB       &kp LC(TAB)   &kp LG(GRAVE)
+					 &trans  &kp LG(Q)  &kp LG(W)  &trans  &trans     &trans        &kp HOME     &kp UP         &kp END    &trans
+					 &trans  &trans     &trans     &trans  &trans     &kp LG(LBKT)  &kp LEFT     &kp DOWN       &kp RIGHT  &kp LG(RBKT)
+					 &trans  &trans     &trans     &trans  &trans     &trans        &trans       &trans         &trans     &trans
+											 			  &trans     &trans  &trans     &kp TAB       &kp LC(TAB)  &kp LG(GRAVE)
 					>;
 			};
 
@@ -176,21 +170,10 @@
 			label = "FnNav";
 
 			bindings = <
-				&trans  &trans    &trans  &trans  &trans     &trans        &kp LA(LEFT)  &kp PG_UP      &kp LA(RIGHT)  &trans
-				&trans  &kp LALT  &none   &trans  &trans     &kp LG(LBKT)  &kp HOME      &kp PG_DN      &kp END        &kp LG(RBKT)
-				&trans  &trans    &trans  &trans  &trans     &trans        &trans        &trans         &trans         &trans
-											 		&trans  &trans  &trans     &kp TAB       &kp LC(TAB)   &kp LG(GRAVE)
-			>;
-		};
-
-		codenav_layer {
-			label = "CodeNav";
-
-			bindings = <
-				&trans  &trans    &trans  &trans  &trans     &trans        &kp LC(LG(LA(U)))  &kp LC(LG(LA(I)))  &kp LC(LG(LA(U)))  &trans
-				&trans  &kp LALT  &none   &trans  &trans     &kp LG(LBKT)  &kp LA(LEFT)       &kp LG(LBKT)       &kp LA(RIGHT)      &kp LG(RBKT)
-				&trans  &trans    &trans  &trans  &trans     &trans        &trans             &trans             &trans             &trans
-												  &trans  &trans  &trans  	 &kp TAB       &kp LC(TAB)        &kp LG(GRAVE)
+				&trans  &trans    &trans  &trans  &trans     &trans        &kp HOME           &kp PG_UP      &kp END            &trans
+				&trans  &kp LALT  &none   &trans  &trans     &kp LG(LBKT)  &kp LA(LEFT)       &kp PG_DN      &kp LA(RIGHT)      &kp LG(RBKT)
+				&trans  &trans    &trans  &trans  &trans     &trans        &kp LC(LG(LA(U)))  &trans         &kp LC(LG(LA(I)))  &trans
+											 		&trans  &trans  &trans     &kp TAB       &kp LC(TAB)        &kp LG(GRAVE)
 			>;
 		};
 	};
