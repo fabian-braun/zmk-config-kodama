@@ -5,13 +5,13 @@
 
 #define DEFAULT 0
 #define NAV     1
-#define SYM     2
-#define NUM     3
-#define MEDIA   4
-#define FUNC    5
-#define DEF     6
-#define GAME    7
-#define FNNAV   8
+#define NAV2    2
+#define SYM     3
+#define NUM     4
+#define MEDIA   5
+#define FUNC    6
+#define DEF     7
+#define GAME    8
 
 &caps_word {
   continue-list = <UNDERSCORE MINUS>;
@@ -84,65 +84,76 @@
 			bindings = <
 				&kp Q         &kp W         &lt MEDIA E         &kp R         &kp T        	         &kp Y          &kp U               &kp I         &kp O      &kp P
 				&hm LSHIFT A  &lt SYM S     &hm LC(LS(LALT)) D  &lt NAV F     &hm LC(LG(LALT)) G     &kp H          &hm LC(LS(LALT)) J  &lt NUM K     &lt SYM L  &hm RSHIFT SQT
-				&kp Z   			&kp X   		  &kp C               &lt FNNAV V   &kp B           		   &kp N          &kp M               &kp COMMA     &kp DOT    &kp QMARK
+				&kp Z   			&kp X   		  &kp C               &lt NAV2 V    &kp B           		   &kp N          &kp M               &kp COMMA     &kp DOT    &kp QMARK
 								                    &hm LCTL ESC        &hm LALT TAB  &hm LGUI SPACE         &hm RGUI BSPC  &hm RALT ENTER      &lt FUNC DEL
 			>;
 		};
 
-			nav_layer {
-					label = "Navigation";
-
-					bindings = <
-					 &trans  &kp LG(Q)  &kp LG(W)  &trans           &trans          &trans           &kp HOME     &kp UP         &kp END    &trans
-					 &trans  &trans     &trans     &trans           &trans          &kp LG(LBKT)     &kp LEFT     &kp DOWN       &kp RIGHT  &kp LG(RBKT)
-					 &trans  &trans     &trans     &trans           &trans          &trans           &trans       &trans         &trans     &trans
-											 			  &trans     &kp LS(LG(TAB))  &kp LG(TAB)     &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(GRAVE)
-					>;
-			};
-
-			sym_layer {
-			  label = "Symbols";
+		nav_layer {
+				label = "Nav";
 
 				bindings = <
-					&kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT     &kp CARET  &kp AMPS  &kp ASTRK  &kp GRAVE  &kp TILDE
-					&kp EQUAL  &kp LT    &kp LBRC   &kp LPAR   &kp LBKT      &kp RBKT   &kp RPAR  &kp RBRC   &kp GT     &kp DQT
-					&trans     &kp PLUS  &kp MINUS  &kp UNDER  &kp FSLH      &kp BSLH   &kp PIPE  &kp SEMI   &kp COLON  &trans
-												       &trans     &trans     &trans        &trans     &trans    &trans
+					&trans  &kp LG(Q)  &kp LG(W)  &trans           &trans          &trans           &kp HOME     &kp UP         &kp END    &trans
+					&trans  &trans     &trans     &trans           &trans          &kp LG(LBKT)     &kp LEFT     &kp DOWN       &kp RIGHT  &kp LG(RBKT)
+					&trans  &trans     &trans     &trans           &trans          &trans           &trans       &trans         &trans     &trans
+														&trans     &kp LS(LG(TAB))  &kp LG(TAB)     &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(GRAVE)
 				>;
-			};
+		};
+
+		nav2_layer {
+			label = "Nav2";
+
+			bindings = <
+				&trans  &trans    &trans  &trans           &trans          &trans           &kp HOME           &kp PG_UP      &kp END            &trans
+				&trans  &kp LALT  &none   &trans           &trans          &kp LG(LBKT)     &kp LA(LEFT)       &kp PG_DN      &kp LA(RIGHT)      &kp LG(RBKT)
+				&trans  &trans    &trans  &trans           &trans          &trans           &kp LC(LG(LA(U)))  &trans         &kp LC(LG(LA(I)))  &trans
+													&trans  &kp LS(LG(TAB))  &kp LG(TAB)     &kp LS(LC(TAB))  &kp LC(TAB)        &kp LG(GRAVE)
+			>;
+		};
+
+		sym_layer {
+			label = "Symbols";
+
+			bindings = <
+				&kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT     &kp CARET  &kp AMPS  &kp ASTRK  &kp GRAVE  &kp TILDE
+				&kp EQUAL  &kp LT    &kp LBRC   &kp LPAR   &kp LBKT      &kp RBKT   &kp RPAR  &kp RBRC   &kp GT     &kp DQT
+				&trans     &kp PLUS  &kp MINUS  &kp UNDER  &kp FSLH      &kp BSLH   &kp PIPE  &kp SEMI   &kp COLON  &trans
+															&trans     &trans     &trans        &trans     &trans    &trans
+			>;
+		};
 			
-			num_layer {
-				label = "Numbers";
+		num_layer {
+			label = "Numbers";
 
-				bindings = <
-					&trans  &kp N7  &kp N8  &kp N9  &trans     &trans  &trans     &trans  &trans  &trans
-					&trans  &kp N4  &kp N5  &kp N6  &trans     &trans  &kp LC(G)  &trans  &trans  &trans
-					&trans  &kp N1  &kp N2  &kp N3  &trans     &trans  &trans     &trans  &trans  &trans
-												  &trans  &kp N0  &trans     &trans  &trans     &trans
+			bindings = <
+				&trans  &kp N7  &kp N8  &kp N9  &trans     &trans  &trans     &trans  &trans  &trans
+				&trans  &kp N4  &kp N5  &kp N6  &trans     &trans  &kp LC(G)  &trans  &trans  &trans
+				&trans  &kp N1  &kp N2  &kp N3  &trans     &trans  &trans     &trans  &trans  &trans
+												&trans  &kp N0  &trans     &trans  &trans     &trans
+			>;
+		};
+
+		media_layer {
+			label = "Media";
+
+			bindings = <
+				&trans  &trans  &trans  &trans  &trans     &trans        &bt BT_PRV    &bt BT_NXT        &trans        &out OUT_TOG
+				&trans  &trans  &trans  &trans  &trans     &trans        &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans
+				&trans  &trans  &trans  &trans  &trans     &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3
+												&trans  &trans  &trans     &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP
+			>;
+		};
+
+		func_layer {
+			label = "Func";
+
+			bindings = <
+				&kp F12  &kp F7  &kp F8  &kp F9  &trans     &trans  &trans  &trans  &trans  &trans
+				&kp F11  &kp F4  &kp F5  &kp F6  &trans     &trans  &trans  &trans  &trans  &trans
+				&kp F10  &kp F1  &kp F2  &kp F3  &trans     &trans  &trans  &trans  &trans  &trans
+													&trans  &trans  &trans    &trans  &trans  &trans
 				>;
-			};
-	
-			media_layer {
-				label = "Media";
-
-				bindings = <
-					&trans  &trans  &trans  &trans  &trans     &trans        &bt BT_PRV    &bt BT_NXT        &trans        &out OUT_TOG
-					&trans  &trans  &trans  &trans  &trans     &trans        &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans
-					&trans  &trans  &trans  &trans  &trans     &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3
-													&trans  &trans  &trans     &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP
-				>;
-			};
-
-			func_layer {
-				label = "Func";
-
-				bindings = <
-			 		&kp F12  &kp F7  &kp F8  &kp F9  &trans     &trans  &trans  &trans  &trans  &trans
-			 		&kp F11  &kp F4  &kp F5  &kp F6  &trans     &trans  &trans  &trans  &trans  &trans
-			 		&kp F10  &kp F1  &kp F2  &kp F3  &trans     &trans  &trans  &trans  &trans  &trans
-						 				       &trans  &trans  &trans     &trans  &trans  &trans
-					>;
-			};
+		};
 
 		def_layer {
 			label = "Def";
@@ -163,17 +174,6 @@
 				&kp LSHIFT  &kp A   &kp S   &kp D   &kp F      &trans  &trans  &trans  &trans  &trans
 				&trans      &trans  &trans  &kp C   &kp V      &trans  &trans  &trans  &trans  &trans
 								            &trans  &trans  &trans     &trans  &trans  &trans
-			>;
-		};
-
-		fnnav_layer {
-			label = "FnNav";
-
-			bindings = <
-				&trans  &trans    &trans  &trans           &trans          &trans           &kp HOME           &kp PG_UP      &kp END            &trans
-				&trans  &kp LALT  &none   &trans           &trans          &kp LG(LBKT)     &kp LA(LEFT)       &kp PG_DN      &kp LA(RIGHT)      &kp LG(RBKT)
-				&trans  &trans    &trans  &trans           &trans          &trans           &kp LC(LG(LA(U)))  &trans         &kp LC(LG(LA(I)))  &trans
-											 		&trans  &kp LS(LG(TAB))  &kp LG(TAB)     &kp LS(LC(TAB))  &kp LC(TAB)        &kp LG(GRAVE)
 			>;
 		};
 	};
