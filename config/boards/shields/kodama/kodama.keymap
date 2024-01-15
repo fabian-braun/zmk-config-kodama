@@ -110,7 +110,7 @@
 					<&macro_tap &kp TAB &to CMDTAB>;
 		};
 		cmdtab_shift: cmd_tab_shift_enter {
-			label = "cmd_tab_enter";
+			label = "cmd_tab_shift_enter";
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			wait-ms = <10>;
