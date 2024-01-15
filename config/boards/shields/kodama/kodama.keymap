@@ -149,10 +149,10 @@
 			label = "Nav2";
 
 			bindings = <
-				&trans  &trans    &trans  &trans           &trans          &trans           &kp HOME           &kp PG_UP      &kp END            &trans
-				&trans  &kp LALT  &none   &trans           &trans          &kp LG(LBKT)     &kp LA(LEFT)       &kp PG_DN      &kp LA(RIGHT)      &kp LG(RBKT)
-				&trans  &trans    &trans  &trans           &trans          &trans           &kp LC(LG(LA(U)))  &trans         &kp LC(LG(LA(I)))  &trans
-													&trans  &kp LS(LG(TAB))  &kp LG(TAB)     &kp LS(LC(TAB))  &kp LC(TAB)        &kp LG(GRAVE)
+				&trans  &trans    &trans  &trans  &trans     &trans           &kp HOME           &kp PG_UP      &kp END            &trans
+				&trans  &trans    &trans  &trans  &trans     &kp LG(LBKT)     &kp LA(LEFT)       &kp PG_DN      &kp LA(RIGHT)      &kp LG(RBKT)
+				&trans  &trans    &trans  &trans  &trans     &trans           &kp LC(LG(LA(U)))  &trans         &kp LC(LG(LA(I)))  &trans
+													&trans  &trans  &trans     &kp LS(LC(TAB))  &kp LC(TAB)        &kp LG(GRAVE)
 			>;
 		};
 
@@ -160,10 +160,10 @@
 			label = "CmdTab";
 
 			bindings = <
-				&trans  &trans  &trans  &trans  &trans      &trans       &trans   &trans  &trans  &trans
-				&trans  &trans  &trans  &trans  &trans      &trans       &trans   &trans  &trans  &trans
-				&trans  &trans  &trans  &trans  &trans      &trans       &trans   &trans  &trans  &trans
-							 	 			  &trans  &trans  &trans      &kp LS(TAB)  &kp TAB  &trans
+				&trans  &trans  &trans  &trans  &trans      &trans       &trans        &kp LA(UP)    &trans         &trans
+				&trans  &trans  &trans  &trans  &trans      &trans       &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(RIGHT)  &trans
+				&trans  &trans  &trans  &trans  &trans      &trans       &trans        &trans        &trans         &trans
+							 	 			  &trans  &trans  &trans      &kp LS(TAB)  &kp TAB       &trans
 			>;
 		};
 
