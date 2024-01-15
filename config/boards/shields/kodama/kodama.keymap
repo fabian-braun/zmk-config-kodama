@@ -93,10 +93,10 @@
 					label = "Navigation";
 
 					bindings = <
-					 &trans  &kp LG(Q)  &kp LG(W)  &trans        &trans       &trans           &kp HOME     &kp UP         &kp END    &trans
-					 &trans  &trans     &trans     &trans        &trans       &kp LG(LBKT)     &kp LEFT     &kp DOWN       &kp RIGHT  &kp LG(RBKT)
-					 &trans  &trans     &trans     &trans        &trans       &trans           &trans       &trans         &trans     &trans
-											 			  &trans     &LS(LG(TAB))  &LG(TAB)     &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(GRAVE)
+					 &trans  &kp LG(Q)  &kp LG(W)  &trans           &trans          &trans           &kp HOME     &kp UP         &kp END    &trans
+					 &trans  &trans     &trans     &trans           &trans          &kp LG(LBKT)     &kp LEFT     &kp DOWN       &kp RIGHT  &kp LG(RBKT)
+					 &trans  &trans     &trans     &trans           &trans          &trans           &trans       &trans         &trans     &trans
+											 			  &trans     &kp LS(LG(TAB))  &kp LG(TAB)     &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(GRAVE)
 					>;
 			};
 
@@ -170,10 +170,10 @@
 			label = "FnNav";
 
 			bindings = <
-				&trans  &trans    &trans  &trans        &trans       &trans           &kp HOME           &kp PG_UP      &kp END            &trans
-				&trans  &kp LALT  &none   &trans        &trans       &kp LG(LBKT)     &kp LA(LEFT)       &kp PG_DN      &kp LA(RIGHT)      &kp LG(RBKT)
-				&trans  &trans    &trans  &trans        &trans       &trans           &kp LC(LG(LA(U)))  &trans         &kp LC(LG(LA(I)))  &trans
-											 		&trans  &LS(LG(TAB))  &LG(TAB)     &kp LS(LC(TAB))  &kp LC(TAB)        &kp LG(GRAVE)
+				&trans  &trans    &trans  &trans           &trans          &trans           &kp HOME           &kp PG_UP      &kp END            &trans
+				&trans  &kp LALT  &none   &trans           &trans          &kp LG(LBKT)     &kp LA(LEFT)       &kp PG_DN      &kp LA(RIGHT)      &kp LG(RBKT)
+				&trans  &trans    &trans  &trans           &trans          &trans           &kp LC(LG(LA(U)))  &trans         &kp LC(LG(LA(I)))  &trans
+											 		&trans  &kp LS(LG(TAB))  &kp LG(TAB)     &kp LS(LC(TAB))  &kp LC(TAB)        &kp LG(GRAVE)
 			>;
 		};
 	};
