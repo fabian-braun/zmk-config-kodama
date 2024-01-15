@@ -151,7 +151,7 @@
 					&trans  &kp LG(Q)  &kp LG(W)  &trans   &trans     &trans           &kp HOME     &kp UP         &kp END    &trans
 					&trans  &trans     &trans     &trans   &trans     &kp LG(LBKT)     &kp LEFT     &kp DOWN       &kp RIGHT  &kp LG(RBKT)
 					&trans  &trans     &trans     &trans   &trans     &trans           &trans       &trans         &trans     &trans
-														 &trans     &cmdtab  &trans     &cmdtab_shift    &cmdtab      &kp LG(GRAVE)
+														 &trans     &trans   &trans     &cmdtab_shift    &cmdtab      &kp LG(GRAVE)
 				>;
 		};
 
