@@ -160,10 +160,10 @@
 			label = "CmdTab";
 
 			bindings = <
-				&trans  &trans  &trans     &trans   &trans          &trans  &trans  &trans  &trans  &trans
-				&trans  &trans  &trans     &trans   &trans          &trans  &trans  &trans  &trans  &trans
-				&trans  &trans  &trans     &trans   &trans          &trans  &trans  &trans  &trans  &trans
-							 	 			  &cmdtab_x  &kp TAB  &kp LS(TAB)     &trans  &trans  &trans
+				&trans  &trans  &trans  &trans  &trans      &trans       &trans   &trans  &trans  &trans
+				&trans  &trans  &trans  &trans  &trans      &trans       &trans   &trans  &trans  &trans
+				&trans  &trans  &trans  &trans  &trans      &trans       &trans   &trans  &trans  &trans
+							 	 			  &trans  &trans  &trans      &kp LS(TAB)  &kp TAB  &trans
 			>;
 		};
 
