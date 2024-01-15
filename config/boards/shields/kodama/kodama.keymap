@@ -85,7 +85,7 @@
 			tap-ms = <0>;
 			bindings = <&macro_press &mo NAV>
 								, <&macro_pause_for_release>
-								, <&macro_release &kp LALT>
+								, <&macro_release &kp LGUI>
 								, <&macro_tap &to DEFAULT>;
     };
 
@@ -106,7 +106,7 @@
 			wait-ms = <10>;
 			tap-ms = <20>;
 			bindings =
-					<&macro_press &kp LCTRL>,
+					<&macro_press &kp LGUI>,
 					<&macro_tap &kp TAB &to CMDTAB>;
 		};
 		cmdtab_x: cmd_tab_leave {
@@ -116,7 +116,7 @@
 			wait-ms = <10>;
 			tap-ms = <20>;
 			bindings =
-					<&macro_release &kp LCTRL>,
+					<&macro_release &kp LGUI>,
 					<&macro_tap &to 0>;
 		};
 	};
