@@ -109,6 +109,16 @@
 					<&macro_press &kp LGUI>,
 					<&macro_tap &kp TAB &to CMDTAB>;
 		};
+		cmdtab_shift: cmd_tab_enter {
+			label = "cmd_tab_enter";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <10>;
+			tap-ms = <20>;
+			bindings =
+					<&macro_press &kp LGUI>,
+					<&macro_tap &kp LS(TAB) &to CMDTAB>;
+		};
 		cmdtab_x: cmd_tab_leave {
 			label = "cmd_tab_leave";
 			compatible = "zmk,behavior-macro";
@@ -141,7 +151,7 @@
 					&trans  &kp LG(Q)  &kp LG(W)  &trans   &trans     &trans           &kp HOME     &kp UP         &kp END    &trans
 					&trans  &trans     &trans     &trans   &trans     &kp LG(LBKT)     &kp LEFT     &kp DOWN       &kp RIGHT  &kp LG(RBKT)
 					&trans  &trans     &trans     &trans   &trans     &trans           &trans       &trans         &trans     &trans
-														 &trans     &cmdtab  &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(GRAVE)
+														 &trans     &cmdtab  &trans     &cmdtab_shift    &cmdtab      &kp LG(GRAVE)
 				>;
 		};
 
