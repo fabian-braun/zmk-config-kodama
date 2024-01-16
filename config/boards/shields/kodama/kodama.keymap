@@ -171,10 +171,10 @@
 			label = "CmdTempTab";
 
 			bindings = <
-				&none  &none  &none  &none  &none      &none          &none    &none  &none  &none
-				&none  &none  &none  &none  &none      &none          &none    &none  &none  &none
-				&none  &none  &none  &none  &none      &none          &none    &none  &none  &none
-							 	 			&none  &none  &none      &cmdtab_shift  &cmdtab  &none
+				&none  &none  &none  &none  				&none        &none          &none    &none  &none  &none
+				&none  &none  &none  &none  				&none        &none          &none    &none  &none  &none
+				&none  &none  &none  &none  				&none        &none          &none    &none  &none  &none
+							 	 			&none  &cmdtab_shift  &cmdtab      &cmdtab_shift  &cmdtab  &none
 			>;
 		};
 
@@ -182,10 +182,10 @@
 			label = "CmdTab";
 
 			bindings = <
-				&none  &none  &none  &none  &none      &none        &none    &none  &none  &none
-				&none  &none  &none  &none  &none      &none        &none    &none  &none  &none
-				&none  &none  &none  &none  &none      &none        &none    &none  &none  &none
-							 	 			&none  &none  &none      &kp LS(TAB)  &kp TAB  &none
+				&none  &none  &none  &none  			&none        &none        &none    &none  &none  &none
+				&none  &none  &none  &none  			&none        &none        &none    &none  &none  &none
+				&none  &none  &none  &none  			&none        &none        &none    &none  &none  &none
+							 	 			&none  &kp LS(TAB)  &kp TAB      &kp LS(TAB)  &kp TAB  &none
 			>;
 		};
 
