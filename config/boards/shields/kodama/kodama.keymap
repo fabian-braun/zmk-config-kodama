@@ -141,7 +141,7 @@
 				&kp Q         &kp W         &lt MEDIA E         &lta 0 R      &kp T        	         &kp Y          &kp U               &kp I         &kp O      &kp P
 				&hm LSHIFT A  &lt SYM S     &hm LC(LS(LALT)) D  &lt NAV F     &hm LC(LG(LALT)) G     &kp H          &hm LC(LS(LALT)) J  &lt NUM K     &lt SYM L  &hm RSHIFT SQT
 				&kp Z   			&kp X   		  &kp C               &lt NAV2 V    &kp B           		   &kp N          &kp M               &kp COMMA     &kp DOT    &kp QMARK
-								                    &hm LCTL ESC        &hm LALT TAB  &hm LGUI SPACE         &hm RGUI BSPC  &hm RALT ENTER      &lt FUNC DEL
+								                    &hm LCTL ESC        &hm LALT TAB  &hm LGUI SPACE         &hm RGUI BSPC  &hm RALT ENTER      &lt RCTL DEL
 			>;
 		};
 
@@ -196,7 +196,7 @@
 				&kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT     &kp CARET  &kp AMPS  &kp ASTRK  &kp GRAVE  &kp TILDE
 				&kp EQUAL  &kp LT    &kp LBRC   &kp LPAR   &kp LBKT      &kp RBKT   &kp RPAR  &kp RBRC   &kp GT     &kp DQT
 				&trans     &kp PLUS  &kp MINUS  &kp UNDER  &kp FSLH      &kp BSLH   &kp PIPE  &kp SEMI   &kp COLON  &trans
-															&trans     &trans     &trans        &trans     &trans    &trans
+														 &trans     &trans     &trans        &trans     &trans    &trans
 			>;
 		};
 			
@@ -204,10 +204,10 @@
 			label = "Numbers";
 
 			bindings = <
-				&trans  &kp N7  &kp N8  &kp N9  &trans     &trans  &trans     &trans  &trans  &trans
-				&trans  &kp N4  &kp N5  &kp N6  &trans     &trans  &kp LC(G)  &trans  &trans  &trans
 				&trans  &kp N1  &kp N2  &kp N3  &trans     &trans  &trans     &trans  &trans  &trans
-												&trans  &kp N0  &trans     &trans  &trans     &trans
+				&trans  &kp N4  &kp N5  &kp N6  &trans     &trans  &kp LC(G)  &trans  &trans  &trans
+				&trans  &kp N7  &kp N8  &kp N9  &trans     &trans  &trans     &trans  &trans  &trans
+												&trans  &kp N0  &trans     &trans  &mo FUNC   &trans
 			>;
 		};
 
@@ -226,9 +226,9 @@
 			label = "Func";
 
 			bindings = <
-				&kp F12  &kp F7  &kp F8  &kp F9  &trans     &trans  &trans  &trans  &trans  &trans
-				&kp F11  &kp F4  &kp F5  &kp F6  &trans     &trans  &trans  &trans  &trans  &trans
 				&kp F10  &kp F1  &kp F2  &kp F3  &trans     &trans  &trans  &trans  &trans  &trans
+				&kp F11  &kp F4  &kp F5  &kp F6  &trans     &trans  &trans  &trans  &trans  &trans
+				&kp F12  &kp F7  &kp F8  &kp F9  &trans     &trans  &trans  &trans  &trans  &trans
 													&trans  &trans  &trans    &trans  &trans  &trans
 				>;
 		};
