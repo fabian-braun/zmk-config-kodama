@@ -44,7 +44,7 @@
     };
 		combo_def {
       timeout-ms = <50>;
-      key-positions = <25 26>;
+      key-positions = <25 29>;
       bindings = <&tog DEF>;
     };
 		combo_game {
@@ -193,10 +193,10 @@
 			label = "Symbols";
 
 			bindings = <
-				&kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT     &kp CARET  &kp AMPS  &kp ASTRK  &kp GRAVE  &kp TILDE
-				&kp EQUAL  &kp LT    &kp LBRC   &kp LPAR   &kp LBKT      &kp RBKT   &kp RPAR  &kp RBRC   &kp GT     &kp DQT
-				&trans     &kp PLUS  &kp MINUS  &kp UNDER  &kp FSLH      &kp BSLH   &kp PIPE  &kp SEMI   &kp COLON  &trans
-														 &trans     &trans     &trans        &trans     &trans    &trans
+				&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT     &kp CARET  &kp AMPS  &kp ASTRK  &kp GRAVE  &kp TILDE
+				&kp PIPE  &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC      &kp UNDER  &kp EQUAL &kp SEMI   &kp COLON  &kp DQT
+				&kp BSLH  &kp LT    &kp GT    &kp LBKT  &kp RBKT      &kp MINUS  &kp PIPE  &kp SEMI   &kp COLON  &kp FSLH
+														 &trans    &trans    &trans        &trans     &trans    &trans
 			>;
 		};
 			
@@ -204,10 +204,10 @@
 			label = "Numbers";
 
 			bindings = <
-				&trans  &kp N1  &kp N2  &kp N3  &trans     &trans  &trans     &trans  &trans  &trans
-				&trans  &kp N4  &kp N5  &kp N6  &trans     &trans  &kp LC(G)  &trans  &trans  &trans
-				&trans  &kp N7  &kp N8  &kp N9  &trans     &trans  &trans     &trans  &trans  &trans
-												&trans  &kp N0  &trans     &trans  &mo FUNC   &trans
+				&kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &trans  &trans     &trans  &trans  &trans
+				&kp N6  &kp N7  &kp N8  &kp N9  &kp N0     &trans  &kp LC(G)  &trans  &trans  &trans
+				&trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans
+												&trans  &trans  &trans     &trans  &mo FUNC   &trans
 			>;
 		};
 
@@ -226,10 +226,10 @@
 			label = "Func";
 
 			bindings = <
-				&kp F10  &kp F1  &kp F2  &kp F3  &trans     &trans  &trans  &trans  &trans  &trans
-				&kp F11  &kp F4  &kp F5  &kp F6  &trans     &trans  &trans  &trans  &trans  &trans
-				&kp F12  &kp F7  &kp F8  &kp F9  &trans     &trans  &trans  &trans  &trans  &trans
-													&trans  &trans  &trans    &trans  &trans  &trans
+				&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &trans  &trans  &trans  &trans
+				&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &trans  &trans  &trans  &trans
+				&kp F11  &kp F12  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
+													&trans  &trans  &trans     &trans  &trans  &trans
 				>;
 		};
 
