@@ -195,7 +195,7 @@
 			bindings = <
 				&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT     &kp CARET  &kp AMPS  &kp ASTRK  &kp GRAVE  &kp TILDE
 				&kp PIPE  &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC      &kp UNDER  &kp EQUAL &kp SEMI   &kp COLON  &kp DQT
-				&kp BSLH  &kp LT    &kp GT    &kp LBKT  &kp RBKT      &kp MINUS  &kp PIPE  &kp SEMI   &kp COLON  &kp FSLH
+				&kp BSLH  &kp LT    &kp GT    &kp LBKT  &kp RBKT      &kp MINUS  &kp PLUS  &kp SEMI   &kp COLON  &kp FSLH
 														 &trans    &trans    &trans        &trans     &trans    &trans
 			>;
 		};
