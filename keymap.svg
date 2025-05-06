@@ -314,10 +314,12 @@ path.combo {
 <text x="0" y="24" class="key hold">RCTRL</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="546" y="138" width="28" height="26" class="combo"/>
+<path d="M420,154 l-93,0" class="combo"/>
+<path d="M420,154 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="141" width="28" height="26" class="combo"/>
 <a href="#wc3">
-<text x="560" y="150" class="combo tap layer-activator">wc3</text>
-</a><text x="560" y="162" class="combo hold">toggle</text>
+<text x="420" y="154" class="combo tap layer-activator">wc3</text>
+</a><text x="420" y="165" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -493,10 +495,12 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="546" y="138" width="28" height="26" class="combo"/>
+<path d="M420,154 l-93,0" class="combo"/>
+<path d="M420,154 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="141" width="28" height="26" class="combo"/>
 <a href="#wc3">
-<text x="560" y="150" class="combo tap layer-activator">wc3</text>
-</a><text x="560" y="162" class="combo hold">toggle</text>
+<text x="420" y="154" class="combo tap layer-activator">wc3</text>
+</a><text x="420" y="165" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -686,10 +690,12 @@ path.combo {
 <text x="0" y="24" class="key hold">RCTRL</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="546" y="138" width="28" height="26" class="combo"/>
+<path d="M420,154 l-93,0" class="combo"/>
+<path d="M420,154 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="141" width="28" height="26" class="combo"/>
 <a href="#wc3">
-<text x="560" y="150" class="combo tap layer-activator">wc3</text>
-</a><text x="560" y="162" class="combo hold">toggle</text>
+<text x="420" y="154" class="combo tap layer-activator">wc3</text>
+</a><text x="420" y="165" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -859,10 +865,12 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="546" y="138" width="28" height="26" class="combo"/>
+<path d="M420,154 l-93,0" class="combo"/>
+<path d="M420,154 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="141" width="28" height="26" class="combo"/>
 <a href="#wc3">
-<text x="560" y="150" class="combo tap layer-activator">wc3</text>
-</a><text x="560" y="162" class="combo hold">toggle</text>
+<text x="420" y="154" class="combo tap layer-activator">wc3</text>
+</a><text x="420" y="165" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1032,10 +1040,12 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="546" y="138" width="28" height="26" class="combo"/>
+<path d="M420,154 l-93,0" class="combo"/>
+<path d="M420,154 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="141" width="28" height="26" class="combo"/>
 <a href="#wc3">
-<text x="560" y="150" class="combo tap layer-activator">wc3</text>
-</a><text x="560" y="162" class="combo hold">toggle</text>
+<text x="420" y="154" class="combo tap layer-activator">wc3</text>
+</a><text x="420" y="165" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1236,10 +1246,12 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="546" y="138" width="28" height="26" class="combo"/>
+<path d="M420,154 l-93,0" class="combo"/>
+<path d="M420,154 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="141" width="28" height="26" class="combo"/>
 <a href="#wc3">
-<text x="560" y="150" class="combo tap layer-activator">wc3</text>
-</a><text x="560" y="162" class="combo hold">toggle</text>
+<text x="420" y="154" class="combo tap layer-activator">wc3</text>
+</a><text x="420" y="165" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1407,10 +1419,12 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="546" y="138" width="28" height="26" class="combo"/>
+<path d="M420,154 l-93,0" class="combo"/>
+<path d="M420,154 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="141" width="28" height="26" class="combo"/>
 <a href="#wc3">
-<text x="560" y="150" class="combo tap layer-activator">wc3</text>
-</a><text x="560" y="162" class="combo hold">toggle</text>
+<text x="420" y="154" class="combo tap layer-activator">wc3</text>
+</a><text x="420" y="165" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1585,10 +1599,12 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="546" y="138" width="28" height="26" class="combo"/>
+<path d="M420,154 l-93,0" class="combo"/>
+<path d="M420,154 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="141" width="28" height="26" class="combo"/>
 <a href="#wc3">
-<text x="560" y="150" class="combo tap layer-activator">wc3</text>
-</a><text x="560" y="162" class="combo hold">toggle</text>
+<text x="420" y="154" class="combo tap layer-activator">wc3</text>
+</a><text x="420" y="165" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

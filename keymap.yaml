@@ -326,5 +326,5 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
 combos:
-- p: [30, 31]
+- p: [29, 30]
   k: {t: wc3, h: toggle}

@@ -25,7 +25,7 @@
     compatible = "zmk,combos";
     combo_game {
       timeout-ms = <50>;
-      key-positions = <30 31>;
+      key-positions = <29 30>;
       bindings = <&tog WC3>;
     };
   };
