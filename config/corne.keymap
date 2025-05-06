@@ -23,16 +23,11 @@
 / {
   combos {
     compatible = "zmk,combos";
-	combo_game {
+    combo_game {
       timeout-ms = <50>;
-      key-positions = <24 25>;
+      key-positions = <30 31>;
       bindings = <&tog WC3>;
     };
-    // combo_undo {
-    //   timeout-ms = <50>;
-    //   key-positions = <20 21>;
-    //   bindings = <&kp LG(Z)>;
-    // };
   };
 };
 
