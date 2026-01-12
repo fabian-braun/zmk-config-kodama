@@ -35,10 +35,9 @@
   behaviors {
     hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS";
       #binding-cells = <2>;
       tapping-term-ms = <150>; // produces tap if held longer than tapping-term-ms
-      quick_tap_ms = <150>;    // if double tapped, long-tabs the key instead of hold
+      quick-tap-ms = <150>;    // if double tapped, long-tabs the key instead of hold
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
     };
@@ -53,7 +52,6 @@
   keymap {
     compatible = "zmk,keymap";
     default_layer {
-        label = "Default";
         display-name = "def";
         bindings = <
             &none &kp Q         &kp W         &lt MEDIA E         &kp R      &kp T                &kp Y          &kp U               &kp I           &kp O         &kp P        &none
@@ -63,7 +61,6 @@
         >;
     };
     nav_layer {
-        label = "Nav";
         display-name = "nav";
         bindings = <
             &none &trans  &kp LG(Q)  &kp LG(W)  &trans   &trans             &trans         &kp HOME    &kp UP     &kp END    &trans     &none
@@ -73,7 +70,6 @@
         >;
     };
     nav2_layer {
-        label = "Nav2";
         display-name = "nav2";
         bindings = <
             &none &trans  &trans    &trans  &trans                 &trans                 &trans                &kp HOME           &kp PG_UP           &kp END            &trans   &none
@@ -83,7 +79,6 @@
         >;
     };
     sym_layer {
-        label = "Symbols";
         display-name = "sym";
         bindings = <
             &none &kp EXCL  &kp AT    &kp HASH  &kp LBRC  &kp RBRC     &kp CARET  &kp AMPS  &kp ASTRK  &kp GRAVE  &kp TILDE  &none
@@ -93,7 +88,6 @@
         >;
     };
     num_layer {
-        label = "Numbers";
         display-name = "num";
         bindings = <
             &none &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &trans  &trans  &trans  &trans  &trans &none
@@ -103,7 +97,6 @@
         >;
     };
     media_layer {
-        label = "Media";
         display-name = "med";
         bindings = <
             &none &trans  &trans           &trans           &trans           &trans              &trans        &bt BT_PRV    &bt BT_NXT        &trans        &trans &none
@@ -113,7 +106,6 @@
         >;
     };
     func_layer {
-        label = "Func";
         display-name = "fn";
         bindings = <
             &none &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &trans  &trans  &trans  &trans &none
@@ -123,7 +115,6 @@
             >;
     };
     wc3_layer {
-        label = "wc3";
         display-name = "wc3";
         bindings = <
             &none &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                 &trans  &trans  &trans  &trans  &trans &none
