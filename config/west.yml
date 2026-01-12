@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-nice-oled
       remote: fabian-braun
-      revision: main
+      revision: migrate-lvgl-9
   self:
     path: config
