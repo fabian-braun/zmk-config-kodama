@@ -41,6 +41,10 @@ GitHub Actions run `26638217295` for commit `7876bd2` (`Adjust layout`) also com
 
 Steps 5-8 were completed locally after the successful no-OLED/no-RGB CI run. The keymap now selects `foostan_corne_5col_layout`, every layer has 36 bindings, and `combo_game` moved from old positions `29 30` to new B/N positions `24 25`. `layout.json` now describes the 36-key Corne Mini layout, and `just draw` regenerated `keymap.yaml` and `keymap.svg`. Local validation found no remaining OLED, RGB, or `&none` references in the firmware config.
 
+## Bootloader Access Result
+
+Because the keyboard reset button may be inaccessible inside the wooden case, the media layer now includes `&bootloader` on both halves. Hold the media layer key (`E`) and press `B` to enter bootloader on the left half, or hold `E` and press `P` to enter bootloader on the right half. This should allow future flashing without opening the case once this firmware is installed.
+
 ## Action Plan
 
 1. Create a migration branch, for example `git switch -c falbatech-corne-mini`.
@@ -83,6 +87,7 @@ Steps 5-8 were completed locally after the successful no-OLED/no-RGB CI run. The
 
 ## Remaining Work
 
+- Re-run CI after the bootloader binding update.
 - Download the successful CI artifacts.
 - Flash `settings_reset`, then the left and right UF2 files.
-- Test Bluetooth pairing, Studio unlock, layer access, and the B/N `combo_game` toggle on the physical keyboard.
+- Test Bluetooth pairing, Studio unlock, layer access, media-layer bootloader keys, and the B/N `combo_game` toggle on the physical keyboard.
