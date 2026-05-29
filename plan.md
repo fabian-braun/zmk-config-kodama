@@ -35,6 +35,10 @@ Known target decisions:
 
 GitHub Actions run `26637477942` on branch `falbatech-corne-mini` completed successfully on May 29, 2026. The linked job `78501397565` built `corne_left` with `nice_nano//zmk` and `studio-rpc-usb-uart`. The same run also successfully built `corne_right`, `settings_reset`, and merged the output artifacts. This resolves the board identifier decision: keep `nice_nano//zmk`.
 
+## Local Layout Result
+
+Steps 5-8 were completed locally after the successful no-OLED/no-RGB CI run. The keymap now selects `foostan_corne_5col_layout`, every layer has 36 bindings, and `combo_game` moved from old positions `29 30` to new B/N positions `24 25`. `layout.json` now describes the 36-key Corne Mini layout, and `just draw` regenerated `keymap.yaml` and `keymap.svg`. Local validation found no remaining OLED, RGB, or `&none` references in the firmware config.
+
 ## Action Plan
 
 1. Create a migration branch, for example `git switch -c falbatech-corne-mini`.
@@ -78,6 +82,4 @@ GitHub Actions run `26637477942` on branch `falbatech-corne-mini` completed succ
 
 ## Remaining Work
 
-- Fix the physical keymap layout and combo positions for the 36-key Corne Mini.
-- Regenerate and review `keymap.yaml` and `keymap.svg`.
 - Re-run CI after the layout/keymap update.

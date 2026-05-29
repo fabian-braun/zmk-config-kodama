@@ -1,8 +1,7 @@
-layout: {zmk_keyboard: corne}
+layout: {zmk_keyboard: corne, layout_name: foostan_corne_5col_layout}
 layers:
   def:
-  - - ''
-    - Q
+  - - Q
     - W
     - {t: E, h: med}
     - R
@@ -11,41 +10,35 @@ layers:
     - U
     - I
     - O
-  - - P
-    - ''
-    - ''
-    - {t: A, h: LSHIFT}
+    - P
+  - - {t: A, h: LSHIFT}
     - {t: S, h: sym}
     - {t: D, h: Ctl+Sft+LALT}
     - {t: F, h: nav}
     - {t: G, h: Ctl+Gui+LALT}
     - H
     - {t: J, h: Ctl+Sft+LALT}
-  - - {t: K, h: num}
+    - {t: K, h: num}
     - {t: L, h: sym}
     - {t: '''', h: RSHIFT}
-    - ''
-    - ''
-    - Z
+  - - Z
     - X
     - C
     - {t: V, h: nav2}
     - B
-  - - N
+    - N
     - M
     - ','
     - .
     - '?'
-    - ''
-    - {t: ESC, h: LCTRL, s: '`'}
+  - - {t: ESC, h: LCTRL, s: '`'}
     - {t: TAB, h: LALT}
     - {t: SPACE, h: LCMD}
     - {t: BSPC, h: RCMD}
-  - - {t: ENTER, h: RALT}
+    - {t: ENTER, h: RALT}
     - {t: DEL, h: RCTRL}
   nav:
-  - - ''
-    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - Gui+Q
     - Gui+W
     - {t: ▽, type: trans}
@@ -54,41 +47,35 @@ layers:
     - HOME
     - UP
     - END
-  - - {t: ▽, type: trans}
-    - ''
-    - ''
     - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - nav2
     - {type: held}
     - {t: ▽, type: trans}
     - Gui+[
     - LEFT
-  - - DOWN
+    - DOWN
     - RIGHT
     - Gui+]
-    - ''
-    - ''
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - Ctl+Gui+Alt+LEFT
     - Ctl+Gui+Alt+SPACE
     - Ctl+Gui+Alt+RIGHT
     - {t: ▽, type: trans}
-    - ''
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  nav2:
-  - - ''
     - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  nav2:
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -97,66 +84,54 @@ layers:
     - HOME
     - PG UP
     - END
-  - - {t: ▽, type: trans}
-    - ''
-    - ''
     - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - Gui+[
     - Alt+LEFT
-  - - PG DN
+    - PG DN
     - Alt+RIGHT
     - Gui+]
-    - ''
-    - ''
-    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - Ctl+Gui+Alt+U
     - {t: ▽, type: trans}
     - Ctl+Gui+Alt+I
     - {t: ▽, type: trans}
-    - ''
-    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - {t: Sft+Ctl+TAB, h: LALT}
     - {t: Ctl+TAB, h: LCMD}
     - {t: Sft+Ctl+TAB, h: RCMD}
-  - - {t: Ctl+TAB, h: RALT}
+    - {t: Ctl+TAB, h: RALT}
     - {t: Gui+`, h: RCTRL}
   sym:
-  - ['', '!', '@', '#', '{', '}', ^, '&', '*', '`']
-  - - '~'
-    - ''
-    - ''
-    - '|'
+  - ['!', '@', '#', '{', '}', ^, '&', '*', '`', '~']
+  - - '|'
     - {t: $, type: held}
     - '%'
     - (
     - )
     - _
     - '='
-  - [;, ':', '"', '', '', \, <, '>', '[', ']']
-  - - '-'
-    - +
     - ;
     - ':'
-    - /
-    - ''
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '"'
+  - [\, <, '>', '[', ']', '-', +, ;, ':', /]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   num:
-  - - ''
-    - '1'
+  - - '1'
     - '2'
     - '3'
     - '4'
@@ -165,21 +140,22 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - ''
-    - ''
-    - '6'
+    - {t: ▽, type: trans}
+  - - '6'
     - '7'
     - '8'
     - '9'
     - '0'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {type: held}
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - ''
-    - ''
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -189,17 +165,10 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - ''
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - fn
+    - fn
     - {t: ▽, type: trans}
   med:
-  - - ''
-    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
@@ -208,40 +177,35 @@ layers:
     - BT PRV
     - BT NXT
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - ''
-    - ''
     - {t: ▽, type: trans}
-    - RGB TOG
-    - RGB HUI
-    - RGB SAI
-    - RGB BRI
+  - - {t: ▽, type: trans}
+    - '&studio_unlock'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - PREV
-  - - PLAY PAUSE
+    - PLAY PAUSE
     - NEXT
     - {t: ▽, type: trans}
-    - ''
-    - ''
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - RGB EFF
-    - RGB HUD
-    - RGB SAD
-    - RGB BRD
-  - - BT CLR
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BT CLR
     - {t: BT, h: '0'}
     - {t: BT, h: '1'}
     - {t: BT, h: '2'}
     - {t: BT, h: '3'}
-    - ''
-    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - VOL DN
-  - [MUTE, VOL UP]
+    - MUTE
+    - VOL UP
   fn:
-  - - ''
-    - F1
+  - - F1
     - F2
     - F3
     - F4
@@ -250,23 +214,24 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - ''
-    - ''
-    - F6
+    - {t: ▽, type: trans}
+  - - F6
     - F7
     - F8
     - F9
     - F10
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {type: held}
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - ''
-    - ''
-    - F11
+  - - F11
     - F12
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -274,17 +239,10 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - ''
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {type: held}
+    - {type: held}
     - {t: ▽, type: trans}
   wc3:
-  - - ''
-    - '1'
+  - - '1'
     - '2'
     - '3'
     - '4'
@@ -293,38 +251,33 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - ''
-    - ''
-    - {t: A, h: LSHIFT}
+    - {t: ▽, type: trans}
+  - - {t: A, h: LSHIFT}
     - S
     - D
     - F
     - G
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - ''
-    - ''
-    - Z
+    - {t: ▽, type: trans}
+  - - Z
     - X
     - C
     - V
     - B
-  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - ''
-    - {t: ESC, h: LCTRL, s: '`'}
+    - {t: ▽, type: trans}
+  - - {t: ESC, h: LCTRL, s: '`'}
     - {t: TAB, h: LALT}
     - {t: SPACE, h: LCMD}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
 combos:
-- p: [29, 30]
+- p: [24, 25]
   k: {t: wc3, h: toggle}
