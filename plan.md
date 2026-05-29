@@ -31,6 +31,10 @@ Known target decisions:
   - `https://github.com/falbatech/zmk-config-cornekbh`: FalbaTech copy of the KeyboardHoarders current 2026 repo. Useful as a reference for Studio setup, but it still has nice!view in its build matrix.
 - Probable source lineage for the shipped no-OLED Studio firmware is `zmk-config-corne-studio` -> `KeyboardHoarders/zmk-config-cornekbh`, while FalbaTech's own current Corne FT repos are better references for their preferred `nice_nano//zmk` build style and settings.
 
+## CI Result
+
+GitHub Actions run `26637477942` on branch `falbatech-corne-mini` completed successfully on May 29, 2026. The linked job `78501397565` built `corne_left` with `nice_nano//zmk` and `studio-rpc-usb-uart`. The same run also successfully built `corne_right`, `settings_reset`, and merged the output artifacts. This resolves the board identifier decision: keep `nice_nano//zmk`.
+
 ## Action Plan
 
 1. Create a migration branch, for example `git switch -c falbatech-corne-mini`.
@@ -46,7 +50,7 @@ Known target decisions:
    - Build `corne_left` and `corne_right` only.
    - Add `settings_reset`.
    - Keep `snippet: studio-rpc-usb-uart` on the central/left build because ZMK Studio stays enabled.
-   - Target genuine nice!nano v2. Try the current upstream board naming first (`nice_nano_v2` or the FalbaTech style used by their current repos, depending on the selected ZMK revision), and adjust based on CI output.
+   - Use `nice_nano//zmk`; CI confirmed this board identifier works for the current ZMK revision.
 5. Keep ZMK Studio enabled:
    - Add or preserve `CONFIG_ZMK_STUDIO=y` in `config/corne.conf`.
    - Ensure one reachable key binding includes `&studio_unlock`, or set locking behavior deliberately if using `CONFIG_ZMK_STUDIO_LOCKING=n`.
@@ -64,14 +68,16 @@ Known target decisions:
    - Search for leftover display/RGB references with `rg 'oled|nice_oled|nice_view|DISPLAY|status_screen|RGB|rgb_ug|UNDERGLOW'`.
    - Review generated keymap diffs manually, especially combos and thumbs.
 9. Validate firmware build:
-   - Let GitHub Actions build left, right, and settings-reset UF2 artifacts.
-   - If CI fails due to board naming or shield assumptions, compare the failure against FalbaTech `zmk-config-corneft` and `zmk-config-cornekbh`.
+   - GitHub Actions has already confirmed left, right, settings-reset, and artifact merge for the no-OLED/no-RGB build matrix.
+   - Re-run CI after the keymap layout changes in steps 6-7.
 10. Flash safely:
    - Download the left/right UF2 artifacts and `settings_reset`.
    - Flash `settings_reset` first if the board has stored ZMK Studio changes.
    - Flash left and right halves separately via bootloader mode.
    - Re-pair Bluetooth devices after reset.
 
-## Remaining Decision
+## Remaining Work
 
-- Choose the exact board identifier after selecting the ZMK revision: upstream configs commonly use `nice_nano_v2`, while recent FalbaTech repos use `nice_nano//zmk`.
+- Fix the physical keymap layout and combo positions for the 36-key Corne Mini.
+- Regenerate and review `keymap.yaml` and `keymap.svg`.
+- Re-run CI after the layout/keymap update.
