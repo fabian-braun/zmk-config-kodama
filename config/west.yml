@@ -2,15 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: fabian-braun
-      url-base: https://github.com/fabian-braun
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-nice-oled
-      remote: fabian-braun
-      revision: migrate-lvgl-9
   self:
     path: config
