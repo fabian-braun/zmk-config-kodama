@@ -31,9 +31,11 @@ Known target decisions:
   - `https://github.com/falbatech/zmk-config-cornekbh`: FalbaTech copy of the KeyboardHoarders current 2026 repo. Useful as a reference for Studio setup, but it still has nice!view in its build matrix.
 - Probable source lineage for the shipped no-OLED Studio firmware is `zmk-config-corne-studio` -> `KeyboardHoarders/zmk-config-cornekbh`, while FalbaTech's own current Corne FT repos are better references for their preferred `nice_nano//zmk` build style and settings.
 
-## CI Result
+## CI Results
 
 GitHub Actions run `26637477942` on branch `falbatech-corne-mini` completed successfully on May 29, 2026. The linked job `78501397565` built `corne_left` with `nice_nano//zmk` and `studio-rpc-usb-uart`. The same run also successfully built `corne_right`, `settings_reset`, and merged the output artifacts. This resolves the board identifier decision: keep `nice_nano//zmk`.
+
+GitHub Actions run `26638217295` for commit `7876bd2` (`Adjust layout`) also completed successfully on May 29, 2026. It built `corne_left` with `studio-rpc-usb-uart`, `corne_right`, and `settings_reset`, then merged the output artifacts. This confirms the 36-key layout/keymap update builds successfully.
 
 ## Local Layout Result
 
@@ -72,8 +74,7 @@ Steps 5-8 were completed locally after the successful no-OLED/no-RGB CI run. The
    - Search for leftover display/RGB references with `rg 'oled|nice_oled|nice_view|DISPLAY|status_screen|RGB|rgb_ug|UNDERGLOW'`.
    - Review generated keymap diffs manually, especially combos and thumbs.
 9. Validate firmware build:
-   - GitHub Actions has already confirmed left, right, settings-reset, and artifact merge for the no-OLED/no-RGB build matrix.
-   - Re-run CI after the keymap layout changes in steps 6-7.
+   - GitHub Actions has confirmed left, right, settings-reset, and artifact merge for both the no-OLED/no-RGB build matrix and the later 36-key layout/keymap update.
 10. Flash safely:
    - Download the left/right UF2 artifacts and `settings_reset`.
    - Flash `settings_reset` first if the board has stored ZMK Studio changes.
@@ -82,4 +83,6 @@ Steps 5-8 were completed locally after the successful no-OLED/no-RGB CI run. The
 
 ## Remaining Work
 
-- Re-run CI after the layout/keymap update.
+- Download the successful CI artifacts.
+- Flash `settings_reset`, then the left and right UF2 files.
+- Test Bluetooth pairing, Studio unlock, layer access, and the B/N `combo_game` toggle on the physical keyboard.
