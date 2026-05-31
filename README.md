@@ -1,3 +1,5 @@
+![](./falbatech_corne.jpeg)
+
 # Keyboard Notes
 
 This is my personal note-space for the firmware and layout of my keyboard.
@@ -13,6 +15,6 @@ Prior to using the FalbaTech keyboard I first used a self-soldered keyboard and 
 which I happily used for a year. I then moved on to FalbaTech, because I liked the clean wooden design, and it's just
 such a nice business.
 
-![](corne_keebmaker.jpeg)
-![](soldering.jpeg)
-![](swweeep_and_corne.jpeg)
+![](./corne_keebmaker.jpeg)
+![](./soldering.jpeg)
+![](./swweeep_and_corne.jpeg)
