@@ -15,6 +15,10 @@
   continue-list = <UNDERSCORE MINUS>;
 };
 
+&lt {
+  tapping-term-ms = <150>;
+};
+
 / {
   chosen {
     zmk,physical-layout = &foostan_corne_5col_layout;
