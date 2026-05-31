@@ -15,7 +15,7 @@ Firmware sources live in `config/`: `corne.keymap` defines layers, combos, Studi
 - `keymap draw -j layout.json keymap.yaml > keymap.svg` redraws the visual keymap manually.
 - GitHub Actions builds `nice_nano//zmk` targets for `corne_left` with `studio-rpc-usb-uart`, `corne_right`, and `settings_reset`.
 
-Install local drawing tools with `pipx install keymap-drawer`; `just` is required for the shortcut command.
+Local tools (`just`, `python`, `uv`, `keymap-drawer`) are pinned in `mise.toml`. Run `mise install` to provision them; with mise shell activation, `just draw` and the `keymap` CLI will be on PATH automatically.
 
 ## Key Bindings To Preserve
 

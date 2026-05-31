@@ -1,0 +1,5 @@
+[tools]
+just = "latest"
+python = "latest"
+uv = "latest"
+"pipx:keymap-drawer" = "latest"
